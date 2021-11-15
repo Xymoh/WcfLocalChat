@@ -1,0 +1,40 @@
+# WcfLocalChat
+
+## 1. Project Goal
+This application allows two or more people to communicate in a chat in the way of sending messages by text form. This chat works on a local connection/local machine.
+
+## 2. Server
+### Credentials
+The program requires Windows, no lower version of .NET than 3, and running the program as follows:
+
+- In the WcfChatAppc folder, run the ChatServer.exe file using administrator permissions (this is implemented top-down from the Visual Studio website). If you run the server without administrator permissions, a message will pop up saying that you need to run the program correctly.
+- Then navigate to the WcfChatAppc folder and run the ChatClient.exe file, in this case there is no need to run the program from an administrator position
+- 1. If the program did not run, run the Visual Studio solution file WcfChatAppc.sln located in the WcfChatAppc folder.
+- 2. In Visual Studio, right click on "Solution", select "Rebuild Solution".
+- 3. After doing so, repeat the first steps.
+
+## 3. Connection to server and endpoint
+
+![Server incicialization](https://lh3.googleusercontent.com/5mhRb84CXO-Nf9bu2VBf-J_r3Hzkyr_BURXmIpTR1TXnP6vs6Ihhwy2tNS_TYfyfO2yYFUKCiAc6OEaCYvpCSMGrxkdpuosoqtlkGjOPYegsPwMgde0Vn1JbP0983LL-aBAuObwBL-agqoEaBy571wTk0NLSiEg81_AmMSXkAqwuxwjUsGLYduWr4-BWxoFb8AZ-7kUScppwQYnEy-eWsHBi1fRkV_9fTXOY3gEtuBwNfVH8JRR0rjWHeRBtw67xxE-PMO9YZaFl-R8gX2cbjr0RPS-ifM8C8h59XCGFB2rup22AVepm26vpV4S4aEBsq9NOLyHqovjDmCkcke-rbo-9kZhTn93mebkRyCBGaBsXBxNktYWZinH7p8h5WBniXoUmUVrrf_DjSK2JJdkMdYZl64YBJ9y_EmXyYeK6Vj_mYA03lIz_CDA_L9v4bnpUcHk25DSCCsqJd72WdgY1GkqNpHioi6ErCdj4tsYsCdp5HZzYidy5i5LFLxYfZqMDcK_9C10M9LOm0R5nzUpGU5FMrVHpoZugIesv7cqLQgO_kZDHgZWWdkzmZFWxI7AK1u0SJW9VfnNg07qi3ne09pnSG_9PCV7HRXCqMebaipa2EVIADV7jQaAWvaW7YunnQMxFEeqOWpzI3f1z0oaGpGH6NtnBs0zeYHXm3vXxOGRBvF6adje7Mm7oswlcI-ph974L-8x0X_XlaY3cwe0jrUU=w973-h507-no?authuser=0)
+
+If the server has this window it means that it has been started according to the administrator, clicking the key will close the server.
+
+![Main chat window](https://lh3.googleusercontent.com/yukEPox3Ftk3TLIRGOcxl4bql5rdC7sv7yRtIk-dxcgybDhNvSWYGMR57Dn3oHE8__NIfRFFedgmW-1mW96sar2X0Bk9dbjIEo4NgRiqf6P_gFkmZGpyXc3RZ2aNS5_OIqtR6HYF6aPXITD4vB-MsFNTJmfhMy3t24O5gQ3ilTboAbTIfte1e8zrZSemDTLB1UbEvzGnM-Wj-E6f-DSKdqx_fcOp8M-0RXpf8ExpzVAJDkZT3qTMHOLJv51xIy8qg8hoVYUmsoO_mvYOFDkg1aiwc_JQhN1bD6mVzdMbe_yXFzYNLqg53NKa0mLJBVEqQzWY6HozjTGlkfJRUIQS2D9kqy4ztzkea_xcCh6s1f9hzFsmGxnzhojZseZ2Z5RL4nJyZuuxQS08ia0bvQtNWOXpz_QUFTQdLGBdPAluWMaP3RLMOAYUiwsHM1IG7aG5B8ZnBlvTIewmDZv-ofYMOBlcUBlXvbhGYG7VYZaeYm26KpDpUjUHusPV0FRcoIAZ08-qfeyvjXjF2RX8ct4USOGNNrlcisyPqEYmxBn_Q4ZseF19-EEa2tFXC9wTPIiuaMCZRXAhBoaEZO24Aq1YL5n1Odet1t8yVUFs3__QXWsCpPGOutBclN8bgLwm7Y6jAJ-jsrwfAMWXeoU1i5b83m8aOzbpfWu9eHaXtD9SOthNTwob8HElZkiyg81rAPae7rms8AE0Y_j0_qxxhfpBmP8=w785-h451-no?authuser=0)
+
+This image shows the appearance of the application after it is launched. No ability to send messages, check logged in users until we log in to the service. The bottom also shows a message about our connection status.
+
+![Entering username](https://lh3.googleusercontent.com/HLRnYyrNQWKI15cmWJdvv9Z-VKiWabgEFJkNGxLYtjYxkS3bp82wQLgPiXN0F0uSupjpRJUQrwE9Xi21hu2dwSzR2jkFhTdmfF4zORmJQrNIikfN-E5WOwElbvzaJP_YximrWNnkIroc_1FqIP7n0YBuW5yFb4gGpsAVDVjHU4ld2jzUYRizc5Qoj-EE2GU3BaGlLGGAPn4oxjIILgrJ3628RkBuUAA6IJWAZPE8kUbTc-3mwHJ88I5fGaA3WquW6dro14FUCunLo3llvmRpczIvAIQ25FAoACeD1kBh-YDebK7MS9TNax-ioroOmpTQCsh0upPihx7BcpMxHck7FipsIiNrp1Bis5cIK4cyVPX6qO8xMIVp-jMMyqjx_Gdj0LTYe-iuVZHk0A8HEBPk28bJSvP54aG48khXpHxhyv6Dp5ea2K8QKVaQvHqNSWBb1bOb7p9mo7JZKBeQ2ENm4KZxDX4nEGkVwl-BKI6MLIgHsnqYuo7n28EgjAGedPhyrkJn91M9Uil5e8RPxutyZIVeRrOHqMy7tHNUs4rd6jdoL1fDfOZdRjOsUfoYFYQ2RmQU2eafJCZxxY6NE-zeC0GlDDfnZte1Gmf2o8x24Kisc0aO63z9TnN0YOQbF48Y2nghS1as4Ny5OQMwbwweRM3Vi3SyISWWmzHLZTDV2gLY-yJ_aKh0m980ixXFe5Jrp_z_PkbNvZddIOOKdw0-3c4=w784-h447-no?authuser=0)
+
+After clicking on the "Login" button, a login window opens for us. Just enter any name and confirm. If we click the "Exit" button, we return an empty string for UserName and the program does not respond to us. Additionally, at the bottom the message of our connection status has changed to "Connecting...".
+
+![Connected to chatroom](https://lh3.googleusercontent.com/XQ2ee681bL7ZrJ9ZabNVLgvABaVnWmelT4cRkoS_U4ZEbJgDiAmNnGtfRTScGeMupnuOltfsOFjMx2ifZvLjfnbiqWTXzHIqAxGkvtwtW6mv4gNOEFStTDfkNkyyNKPBqQxoWX54lC47B6XloRxY1EqY5cQ2MIat_4kF9T3YhE5L2lPQSvDDHr8AI_zW1OPRRlfJona6EroEjsxXG_UJ5aj5Tp9XAMugr0R-YYelX1CUjKgx-1Wz_cMaZnUSMvPYYiaZfeN3AeMn7jvvTIFM9sy3UAlrPpeCVRu6qewfRrycHKapeym1Lq_XMzfq9FNI-zMPhUnaeuNL12AQYnPnWlKL6e_Vlc17gLBbhNWwq2rIWECJSF6xIqk4NvdoHlDxLnVsBYhuhg12yhzXIlF4SAnKYjuq7GZgwKCxJbVIT0dNHisexqBGa2lODtEuxL0M37ALHVvBvSzy0kzvurqJELcAAALz_mbG_NcLnrc97UvhOOKv-BugiHSgiTyNM4P7lckb1Kiub67WaTR-1RUTkehsSMy_Vs2xzl7c2aj-h5Lp1nu3h9YW-jzNzVGfYD9Om7uGV0BqWvFOrAWYriknENzc3JDeXaPKxzj0R_gCd7DVDbeFZ3TM2Ukbdsr-UWXAxJdoGyKU_Ta4dEZyMcxSCEk2tsIZHVHigSm19eZP1t0YAY1_q5Bq8UbAi3-yR8znTlx98BbFpz8YmcAJLvd5Joo=w784-h451-no?authuser=0)
+
+After connecting, the program greets us and informs us who we are connected to. It also updates the list of connected users, unlocks the ability to send messages and prevents us from logging in again without logging out first.
+
+![Both users connected in](https://lh3.googleusercontent.com/8BQ-eUxYNMOyO7EWiBYTueMf_eNBEgmR4BrK0wolk_1X7H-TuKaVD5GHC8Dm3L6dvLdvIIsLUZLswhah7P0YdabF7qFHpr5welTyyvkpnX_SBHkhlzZpitEKk76VFkXRrTx8-6asIzag6BcxpxEGqK-1wWY9pTjEIgVopPjduasK_uzyaXJi4t5bZU6UHPrvyF_yuhrJb_avyDQFZLnUsHMww7pNdxBnJjH5CapNR9NhjKmSJJSNhsHDrnnp1yOF1-oXr0NPY_mz9qqt_pn-RhysvQf6DekEgGVwI1lZVDRc4xTCE64QXsZX56g8j5qtJnqtZK4AvuHrrjlzvW1D28rn0dph8BLt6iJkxCk35lgoQbH34Zu4hJIqJzM4Yup2auKDhFTLB2rYmpIJRWAZeiIfTm6lrcJcmBAQZNiNZyG4bvyzKaRDkpZ2IwJNZtP2REtAIgQzqFTI-y2vmpzFwxd1Syje5R_hZGAygVC--Of-kP9P6-aG26RhAlY9SJ9oUDn6v5abdwutNejZCStnlx0CpHRuQrCfFMTo47_WusVG9IVICtBKgUH5Udv6CmHLN46mhqZ8qCMUpDsmw_KkaWNMFR291lfNFcPyYQs-4nJoeILg_RS3Hq85vMscuhvxB3NeSc2LV6nMLeJbUkMpIt0awN1RWpgucVLPRyn8nGDeO20S0GgttSDoRmNtFFigg1C4XsoeA4EW4zQ-ze8iiNc=w782-h904-no?authuser=0)
+
+When we turn on the other client we can't see anything without logging in. But when you log in, the view for both windows updates, so the view also updates every time a message is sent.
+
+![Disconnecting users](https://lh3.googleusercontent.com/zMgmAKzz15dHzAOdz5PrBh1-MXJVRb4Y7HggQ9m7mHuvJi-bJMOeKiWtEItukDFmox0V40kt3Yl4babwIc4B92ucmMMPZE41w55yTczA0GYXHTLzkR-taGsnbyT2qPzi_kvC5-PDwXmuX9Ao-IQf6yBijGPxtfh0HikhHtZ9QX4RPyti_60BTkeKNI3m_gEfRDQ4sf0e4og5Mu2aYU-_VeiCpXSsuTqy4EswXFnfVKtSr-e9t1cF5VcQCDuofiExRm_bXAntWlukKD2uIbnkxq3gpn3KcwIy-7HrKz92z4aNIHRVJM53XmXmpt-Wm9yJibngmtoHdQJOKYxCDqlTmYsEPmS6VDOYtwL0_n-Gk8zs1n-k7dpwpmjRaYBgAXU0Zyy1PMd-7NPfk09TQNCuJC9-H77v0LGP6jmswEinxxDvTPedvRe6H_2f6jAPY3OLjg_6GNV58e744G6UcY-uj4I1U_7lyGlCW1C5a-G2f0L5yyMJTms5nJ3N9DaKQueuV_qS5uJEgBhs3WemUq0vR1Dh7tiTusqsO79HHfDnke-zXGKS6m56w2yEimu1mne8u0e2zsw1vV607gB-TgYlcDdpkKusISuObFOKqBQxzMDaLh9RmZhNRKEnMPykwM7Ahj-puVj3qLFsG1Ya-n0OrJAIqQe9T-UamBli9ZbnzGrZstT1A9i68gNRg_bTTSlGojAfUMq09pK0_8_gGa47faU=w786-h907-no?authuser=0)
+
+When a user logs out, the other user is shown information about that user's logout. The logged out user will not see new messages until they log back in. There is also an update about the connection "Not connected" and the people in the chat.
